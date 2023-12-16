@@ -1,0 +1,3 @@
+# prevent formatting 3rd party libraries
+DisableFormat: true
+SortIncludes: Never
