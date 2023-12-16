@@ -10,6 +10,9 @@ include(cmake/PreventInSourceBuilds.cmake)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
 
+# turn on static analyzers
+include(cmake/CppCheck.cmake)
+
 add_subdirectory(include)
 add_subdirectory(src)
 
