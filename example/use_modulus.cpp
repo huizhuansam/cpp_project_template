@@ -6,6 +6,6 @@ int main() {
   int x{};
   std::cin >> x;
   int result = basicmath::modulus(x);
-  std::cout << "The factorial of " << x << " is " << result << "\n";
+  std::cout << "The modulus of " << x << " is " << result << "\n";
   return 0;
 }
