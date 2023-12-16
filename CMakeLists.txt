@@ -11,3 +11,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED on)
 
 add_subdirectory(include)
 add_subdirectory(src)
+
+message(STATUS "Building examples...")
+add_subdirectory(example)
