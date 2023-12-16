@@ -8,3 +8,6 @@ set(CMAKE_VERBOSE_MAKEFILE on)
 # language version settings
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
+
+add_subdirectory(include)
+add_subdirectory(src)
