@@ -21,6 +21,9 @@ else()
     --suppress=syntaxError
     --suppress=preprocessorErrorDirective
     --inconclusive
+    # ignore 3rd party libs
+    --suppress=*:${PROJECT_SOURCE_DIR}/lib/*
+    # set language standard
     --std=c++${CMAKE_CXX_STANDARD})
     # warnings as errors
     list(APPEND CMAKE_CXX_CPPCHECK --error-exitcode=2)
