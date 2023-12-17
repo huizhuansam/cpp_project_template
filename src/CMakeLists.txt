@@ -1,7 +1,7 @@
 project(${CMAKE_PROJECT_NAME})
 
-add_library(basicmath factorial.cpp modulus.cpp)
-add_library(unsafe stupidHello.cpp)
+add_library(basicmath basicmath/factorial.cpp basicmath/modulus.cpp)
+add_library(unsafe unsafe/stupidHello.cpp)
 
 # make headers accessible for client
 target_include_directories(basicmath 
