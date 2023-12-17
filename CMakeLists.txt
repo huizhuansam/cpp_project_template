@@ -19,3 +19,7 @@ add_subdirectory(src)
 
 message(STATUS "Building examples...")
 add_subdirectory(example)
+
+add_subdirectory(lib)
+message(STATUS "Building tests...")
+add_subdirectory(tests)
