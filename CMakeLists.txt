@@ -12,6 +12,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED on)
 
 # turn on static analyzers
 include(cmake/CppCheck.cmake)
+include(cmake/ClangTidy.cmake)
 
 add_subdirectory(include)
 add_subdirectory(src)
