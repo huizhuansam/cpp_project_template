@@ -22,3 +22,6 @@ add_subdirectory(example)
 
 # tests
 include(cmake/Catch2.cmake)
+
+# documentation
+include(cmake/Doxygen.cmake)
