@@ -17,9 +17,6 @@ include(cmake/ClangTidy.cmake)
 add_subdirectory(include)
 add_subdirectory(src)
 
-message(STATUS "Building examples...")
-add_subdirectory(example)
-
 # tests
 include(cmake/Catch2.cmake)
 
