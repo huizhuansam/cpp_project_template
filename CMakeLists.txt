@@ -16,6 +16,7 @@ include(cmake/ClangTidy.cmake)
 
 add_subdirectory(simulation/include)
 add_subdirectory(simulation/src)
+add_subdirectory(simulation)
 
 # tests
 include(cmake/Catch2.cmake)
