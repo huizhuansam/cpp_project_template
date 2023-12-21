@@ -11,4 +11,6 @@ class Customer {
 
  public:
   Customer(const double arrivalTime, const double serviceTime);
+
+  friend std::ostream& operator<<(std::ostream& out, const Customer& customer);
 };
