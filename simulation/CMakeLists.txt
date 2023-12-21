@@ -9,3 +9,6 @@ target_link_libraries(main
 target_link_libraries(main 
   PRIVATE 
   CheckoutCounter)
+target_link_libraries(main 
+  PRIVATE 
+  Shop)
