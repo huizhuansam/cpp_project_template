@@ -14,8 +14,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED on)
 include(cmake/CppCheck.cmake)
 include(cmake/ClangTidy.cmake)
 
-add_subdirectory(include)
-add_subdirectory(src)
+add_subdirectory(simulation/include)
+add_subdirectory(simulation/src)
 
 # tests
 include(cmake/Catch2.cmake)
