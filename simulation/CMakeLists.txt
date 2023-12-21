@@ -6,3 +6,6 @@ add_executable(main main.cpp)
 target_link_libraries(main 
   PRIVATE 
   Customer)
+target_link_libraries(main 
+  PRIVATE 
+  CheckoutCounter)
