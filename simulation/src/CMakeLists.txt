@@ -5,6 +5,7 @@ add_library(CheckoutCounter CheckoutCounter.cpp)
 add_library(Shop Shop.cpp)
 add_library(Event Event.cpp)
 add_library(ArrivalEvent ArrivalEvent.cpp)
+add_library(Simulation Simulation.cpp)
 
 
 # make headers accessible for client
@@ -21,5 +22,8 @@ target_include_directories(Event
   PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 target_include_directories(ArrivalEvent
+  PUBLIC
+  ${CMAKE_CURRENT_SOURCE_DIR}/../include)
+target_include_directories(Simulation
   PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}/../include)
