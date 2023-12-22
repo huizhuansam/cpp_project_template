@@ -11,5 +11,5 @@ class Shop {
  public:
   explicit Shop(const int numberOfCounters);
 
-  std::shared_ptr<CheckoutCounter> getAvailableCounter();
+  std::shared_ptr<CheckoutCounter> getAvailableCounter() const;
 };

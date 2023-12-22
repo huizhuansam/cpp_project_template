@@ -9,7 +9,7 @@ Shop::Shop(const int numberOfCounters) : counters(numberOfCounters) {
   }
 }
 
-std::shared_ptr<CheckoutCounter> Shop::getAvailableCounter() {
+std::shared_ptr<CheckoutCounter> Shop::getAvailableCounter() const {
   auto it = std::find_if(this->counters.begin(), this->counters.end(),
                          [](const std::shared_ptr<CheckoutCounter>& counter) {
                            return counter->isAvailable();

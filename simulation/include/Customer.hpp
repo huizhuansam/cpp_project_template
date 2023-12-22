@@ -1,6 +1,9 @@
 #pragma once
 
 #include <iostream>
+#include <memory>
+#include "CheckoutCounter.hpp"
+#include "Shop.hpp"
 
 class Customer {
  private:
@@ -11,6 +14,8 @@ class Customer {
 
  public:
   Customer(const double arrivalTime, const double serviceTime);
+
+  std::shared_ptr<CheckoutCounter> goToCounter(const Shop& shop) const;
 
   friend std::ostream& operator<<(std::ostream& out, const Customer& customer);
 };
