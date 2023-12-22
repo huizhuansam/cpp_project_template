@@ -4,7 +4,7 @@
 #include "Customer.hpp"
 
 ShopSimulation::ShopSimulation(const Shop& shop,
-                               std::vector<std::shared_ptr<Event>> initEvents)
+                               std::vector<std::shared_ptr<Event>>& initEvents)
     : shop(shop), initEvents(initEvents) {}
 
 ShopSimulation ShopSimulation::factory() {

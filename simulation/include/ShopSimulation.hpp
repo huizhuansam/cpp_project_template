@@ -9,9 +9,9 @@
 class ShopSimulation : public Simulation {
  private:
   const Shop& shop;
-  std::vector<std::shared_ptr<Event>> initEvents;
+  std::vector<std::shared_ptr<Event>>& initEvents;
   ShopSimulation(const Shop& shop,
-                 std::vector<std::shared_ptr<Event>> initEvents);
+                 std::vector<std::shared_ptr<Event>>& initEvents);
 
  public:
   static ShopSimulation factory();
