@@ -17,5 +17,7 @@ class Customer {
 
   std::shared_ptr<CheckoutCounter> goToCounter(const Shop& shop) const;
 
+  double getServiceTime() const;
+
   friend std::ostream& operator<<(std::ostream& out, const Customer& customer);
 };
