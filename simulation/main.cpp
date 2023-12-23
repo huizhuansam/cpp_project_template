@@ -1,10 +1,9 @@
 #include <iostream>
-#include "Customer.hpp"
+#include "ShopSimulation.hpp"
+#include "Simulator.hpp"
 
 int main() {
-  double a{0};
-  double s{3};
-  Customer c{a, s};
-  std::cout << c;
+  Simulator simulator = Simulator::factory(ShopSimulation::factory());
+  simulator.run();
   return 0;
 }
