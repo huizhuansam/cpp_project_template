@@ -6,5 +6,5 @@
 
 class Simulation {
  public:
-  virtual std::vector<std::shared_ptr<Event>> getInitialEvents() = 0;
+  virtual std::vector<std::shared_ptr<Event>> getInitialEvents() const = 0;
 };

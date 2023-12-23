@@ -8,13 +8,13 @@
 
 class ArrivalEvent : public Event {
  private:
-  const Customer& customer;
-  const Shop& shop;
+  const Customer customer;
+  const Shop shop;
 
  public:
-  ArrivalEvent(const double time, const Customer& customer, const Shop& shop);
+  ArrivalEvent(const double time, const Customer customer, const Shop shop);
 
   std::vector<std::shared_ptr<Event>> simulate() override;
 
-  friend std::ostream& operator<<(std::ostream& out, const ArrivalEvent& event);
+  std::ostream& print(std::ostream& out) const override;
 };

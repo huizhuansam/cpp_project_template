@@ -8,13 +8,13 @@
 
 class ShopSimulation : public Simulation {
  private:
-  const Shop& shop;
-  std::vector<std::shared_ptr<Event>>& initEvents;
-  ShopSimulation(const Shop& shop,
-                 std::vector<std::shared_ptr<Event>>& initEvents);
+  const Shop shop;
+  std::vector<std::shared_ptr<Event>> initEvents;
+  ShopSimulation(const Shop shop,
+                 std::vector<std::shared_ptr<Event>> initEvents);
 
  public:
   static ShopSimulation factory();
 
-  std::vector<std::shared_ptr<Event>> getInitialEvents() override;
+  std::vector<std::shared_ptr<Event>> getInitialEvents() const override;
 };

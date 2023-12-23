@@ -18,4 +18,6 @@ class Event {
   friend bool operator<(const Event& e1, const Event& e2);
 
   friend std::ostream& operator<<(std::ostream& out, const Event& event);
+
+  virtual std::ostream& print(std::ostream& out) const;
 };

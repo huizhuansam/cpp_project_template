@@ -1,18 +1,19 @@
 #include "Simulator.hpp"
+#include <iostream>
 
-Simulator::Simulator(std::priority_queue<std::shared_ptr<Event>>& events)
+Simulator::Simulator(std::priority_queue<std::shared_ptr<Event>> events)
     : events(events){};
 
-Simulator Simulator::factory(Simulation& simulation) {
+Simulator Simulator::factory(const Simulation& simulation) {
   std::priority_queue<std::shared_ptr<Event>> events{};
   for (const std::shared_ptr<Event> event : simulation.getInitialEvents()) {
     events.push(event);
   }
-  return Simulator{events};
+  return Simulator{(events)};
 }
 
 void Simulator::run() {
-  while (!this->events.empty()) {
+  while (!(this->events.empty())) {
     std::shared_ptr<Event> event = this->events.top();
     this->events.pop();
     std::cout << *event;

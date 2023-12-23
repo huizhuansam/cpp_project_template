@@ -12,6 +12,10 @@ bool operator<(const Event& e1, const Event& e2) {
 }
 
 std::ostream& operator<<(std::ostream& out, const Event& event) {
-  out << std::fixed << std::setprecision(2) << event.time << "\n";
+  return event.print(out);
+}
+
+std::ostream& Event::print(std::ostream& out) const {
+  out << std::fixed << std::setprecision(3) << this->time;
   return out;
 }

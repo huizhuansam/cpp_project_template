@@ -3,8 +3,8 @@
 #include "ArrivalEvent.hpp"
 #include "Customer.hpp"
 
-ShopSimulation::ShopSimulation(const Shop& shop,
-                               std::vector<std::shared_ptr<Event>>& initEvents)
+ShopSimulation::ShopSimulation(const Shop shop,
+                               std::vector<std::shared_ptr<Event>> initEvents)
     : shop(shop), initEvents(initEvents) {}
 
 ShopSimulation ShopSimulation::factory() {
@@ -27,6 +27,6 @@ ShopSimulation ShopSimulation::factory() {
   return ShopSimulation{shop, initEvents};
 }
 
-std::vector<std::shared_ptr<Event>> ShopSimulation::getInitialEvents() {
+std::vector<std::shared_ptr<Event>> ShopSimulation::getInitialEvents() const {
   return this->initEvents;
 }
