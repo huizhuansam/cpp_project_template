@@ -16,6 +16,6 @@ void CheckoutCounter::makeUnavailable() {
 
 std::ostream& operator<<(std::ostream& out,
                          const CheckoutCounter& checkoutCounter) {
-  out << "Counter " << checkoutCounter.id << "\n";
+  out << "Counter " << checkoutCounter.id;
   return out;
 }
