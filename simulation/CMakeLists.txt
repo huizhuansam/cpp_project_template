@@ -12,3 +12,18 @@ target_link_libraries(main
 target_link_libraries(main 
   PRIVATE 
   Shop)
+target_link_libraries(main 
+  PRIVATE 
+  Event)
+target_link_libraries(main 
+  PRIVATE 
+  ArrivalEvent)
+target_link_libraries(main 
+  PRIVATE 
+  Simulation)
+target_link_libraries(main 
+  PRIVATE 
+  ShopSimulation)
+target_link_libraries(main 
+  PRIVATE 
+  Simulator)
