@@ -8,9 +8,9 @@
 
 class ShopSimulation : public Simulation {
  private:
-  const Shop shop;
+  const std::shared_ptr<Shop> shop;
   std::vector<std::shared_ptr<Event>> initEvents;
-  ShopSimulation(const Shop shop,
+  ShopSimulation(const std::shared_ptr<Shop> shop,
                  std::vector<std::shared_ptr<Event>> initEvents);
 
  public:

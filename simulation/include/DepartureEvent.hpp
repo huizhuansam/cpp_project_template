@@ -7,10 +7,10 @@
 
 class DepartureEvent : public Event {
  private:
-  const Customer customer;
+  const std::shared_ptr<Customer> customer;
 
  public:
-  DepartureEvent(const double time, const Customer customer);
+  DepartureEvent(const double time, const std::shared_ptr<Customer> customer);
 
   std::vector<std::shared_ptr<Event>> simulate() override;
 

@@ -8,11 +8,13 @@
 
 class ArrivalEvent : public Event {
  private:
-  const Customer customer;
-  const Shop shop;
+  const std::shared_ptr<Customer> customer;
+  const std::shared_ptr<Shop> shop;
 
  public:
-  ArrivalEvent(const double time, const Customer customer, const Shop shop);
+  ArrivalEvent(const double time,
+               const std::shared_ptr<Customer> customer,
+               const std::shared_ptr<Shop> shop);
 
   std::vector<std::shared_ptr<Event>> simulate() override;
 

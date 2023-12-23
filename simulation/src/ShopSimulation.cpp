@@ -3,7 +3,7 @@
 #include "ArrivalEvent.hpp"
 #include "Customer.hpp"
 
-ShopSimulation::ShopSimulation(const Shop shop,
+ShopSimulation::ShopSimulation(const std::shared_ptr<Shop> shop,
                                std::vector<std::shared_ptr<Event>> initEvents)
     : shop(shop), initEvents(initEvents) {}
 
@@ -13,13 +13,14 @@ ShopSimulation ShopSimulation::factory() {
   std::vector<std::shared_ptr<Event>> initEvents(numInitialEvents);
   int numCounters{};
   std::cin >> numCounters;
-  Shop shop{numCounters};
+  std::shared_ptr<Shop> shop = std::make_shared<Shop>(numCounters);
   for (int i = 0; i < numInitialEvents; ++i) {
     double arrivalTime{};
     std::cin >> arrivalTime;
     double serviceTime{};
     std::cin >> serviceTime;
-    Customer customer{arrivalTime, serviceTime};
+    std::shared_ptr<Customer> customer =
+        std::make_shared<Customer>(arrivalTime, serviceTime);
     std::shared_ptr<Event> event =
         std::make_shared<ArrivalEvent>(arrivalTime, customer, shop);
     initEvents[i] = event;
