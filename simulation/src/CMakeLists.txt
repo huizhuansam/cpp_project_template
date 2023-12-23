@@ -8,6 +8,7 @@ add_library(ArrivalEvent ArrivalEvent.cpp)
 add_library(Simulation Simulation.cpp)
 add_library(ShopSimulation ShopSimulation.cpp)
 add_library(Simulator Simulator.cpp)
+add_library(DepartureEvent DepartureEvent.cpp)
 
 # make headers accessible for client
 target_include_directories(Customer
@@ -32,5 +33,8 @@ target_include_directories(ShopSimulation
   PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 target_include_directories(Simulator
+  PUBLIC
+  ${CMAKE_CURRENT_SOURCE_DIR}/../include)
+target_include_directories(DepartureEvent
   PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}/../include)

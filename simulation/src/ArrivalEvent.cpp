@@ -1,4 +1,5 @@
 #include "ArrivalEvent.hpp"
+#include "DepartureEvent.hpp"
 
 ArrivalEvent::ArrivalEvent(const double time,
                            const Customer customer,
@@ -6,7 +7,8 @@ ArrivalEvent::ArrivalEvent(const double time,
     : Event(time), customer(customer), shop(shop){};
 
 std::vector<std::shared_ptr<Event>> ArrivalEvent::simulate() {
-  return std::vector<std::shared_ptr<Event>>{};
+  return std::vector<std::shared_ptr<Event>>{
+      std::make_shared<DepartureEvent>(this->getTime(), this->customer)};
 }
 
 std::ostream& ArrivalEvent::print(std::ostream& out) const {

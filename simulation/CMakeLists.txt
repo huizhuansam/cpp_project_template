@@ -27,3 +27,6 @@ target_link_libraries(main
 target_link_libraries(main 
   PRIVATE 
   Simulator)
+target_link_libraries(main 
+  PRIVATE 
+  DepartureEvent)
