@@ -25,7 +25,8 @@ ShopSimulation ShopSimulation::factory() {
         std::make_shared<ArrivalEvent>(arrivalTime, customer, shop);
     initEvents[i] = event;
   }
-  return ShopSimulation{shop, initEvents};
+  ShopSimulation simulation{shop, initEvents};
+  return simulation;
 }
 
 std::vector<std::shared_ptr<Event>> ShopSimulation::getInitialEvents() const {
