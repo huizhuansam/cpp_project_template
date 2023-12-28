@@ -20,6 +20,3 @@ add_subdirectory(simulation)
 
 # tests
 include(cmake/Catch2.cmake)
-
-# documentation
-include(cmake/Doxygen.cmake)
