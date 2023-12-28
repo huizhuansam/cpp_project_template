@@ -104,11 +104,71 @@
              
   <section id="event">
 <span id="api-event"></span><h1>Event<a class="headerlink" href="#event" title="Link to this heading"></a></h1>
+<p>Include dependency graph for Event.hpp:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../_images/graphviz-f51d9ccdd6873e0f7cd5aea58df9072211c1f288.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Event.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Event.hpp&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;iostream&quot; tooltip=&quot;iostream&quot;]
+    &quot;3&quot; [label=&quot;memory&quot; tooltip=&quot;memory&quot;]
+    &quot;4&quot; [label=&quot;vector&quot; tooltip=&quot;vector&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;include&quot;]
+    &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;include&quot;]
+    &quot;1&quot; -&gt; &quot;4&quot; [dir=forward tooltip=&quot;include&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>This graph shows which files directly or indirectly include Event.hpp:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../_images/graphviz-0c0140246d9d0ceedc02541e60252a45e159d4d4.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;2&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ArrivalEvent.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ArrivalEvent.hpp&quot;]
+    &quot;3&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/DepartureEvent.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/DepartureEvent.hpp&quot;]
+    &quot;1&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Event.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Event.hpp&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;4&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ServiceBeginEvent.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ServiceBeginEvent.hpp&quot;]
+    &quot;5&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ServiceDoneEvent.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ServiceDoneEvent.hpp&quot;]
+    &quot;6&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ShopSimulation.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ShopSimulation.hpp&quot;]
+    &quot;7&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Simulation.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Simulation.hpp&quot;]
+    &quot;8&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Simulator.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Simulator.hpp&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=back tooltip=&quot;include&quot;]
+    &quot;1&quot; -&gt; &quot;3&quot; [dir=back tooltip=&quot;include&quot;]
+    &quot;1&quot; -&gt; &quot;4&quot; [dir=back tooltip=&quot;include&quot;]
+    &quot;1&quot; -&gt; &quot;5&quot; [dir=back tooltip=&quot;include&quot;]
+    &quot;1&quot; -&gt; &quot;6&quot; [dir=back tooltip=&quot;include&quot;]
+    &quot;1&quot; -&gt; &quot;7&quot; [dir=back tooltip=&quot;include&quot;]
+    &quot;1&quot; -&gt; &quot;8&quot; [dir=back tooltip=&quot;include&quot;]
+    &quot;7&quot; -&gt; &quot;6&quot; [dir=back tooltip=&quot;include&quot;]
+    &quot;7&quot; -&gt; &quot;8&quot; [dir=back tooltip=&quot;include&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv45Event">
 <span id="_CPPv35Event"></span><span id="_CPPv25Event"></span><span id="Event"></span><span class="target" id="class_event"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Event</span></span></span><a class="headerlink" href="#_CPPv45Event" title="Link to this definition"></a><br /></dt>
 <dd><div class="docutils container">
 <em>#include &lt;Event.hpp&gt;</em></div>
+<p>Inheritence diagram for Event:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../_images/graphviz-a1a1b560e88a2013b80e5875edfb080ac1fb1dc2.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;2&quot; [label=&quot;ArrivalEvent&quot; tooltip=&quot;ArrivalEvent&quot;]
+    &quot;3&quot; [label=&quot;DepartureEvent&quot; tooltip=&quot;DepartureEvent&quot;]
+    &quot;1&quot; [label=&quot;Event&quot; tooltip=&quot;Event&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;4&quot; [label=&quot;ServiceBeginEvent&quot; tooltip=&quot;ServiceBeginEvent&quot;]
+    &quot;5&quot; [label=&quot;ServiceDoneEvent&quot; tooltip=&quot;ServiceDoneEvent&quot;]
+    &quot;2&quot; -&gt; &quot;1&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+    &quot;3&quot; -&gt; &quot;1&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+    &quot;4&quot; -&gt; &quot;1&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+    &quot;5&quot; -&gt; &quot;1&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
 <p>The <a class="reference internal" href="#class_event"><span class="std std-ref">Event</span></a> class is an abstract class that encapsulates a discrete event to be simulated. An event encapsulates the time the event occurs. A subclass of event <em>must</em> override the <a class="reference internal" href="#class_event_1a8dc8991b3bbe103299b70273736ea4cb"><span class="std std-ref">simulate()</span></a> method to implement the logic of the simulation when this event is simulated. The simulate method returns an array of events, which the simulator will then add to the event queue. Note that an event also implements the Comparable interface so that a PriorityQueue can arrange the events in the order of event time. </p>
 <p>Subclassed by <a class="reference internal" href="arrival_event.html#class_arrival_event"><span class="std std-ref">ArrivalEvent</span></a>, <a class="reference internal" href="departure_event.html#class_departure_event"><span class="std std-ref">DepartureEvent</span></a>, <a class="reference internal" href="service_begin_event.html#class_service_begin_event"><span class="std std-ref">ServiceBeginEvent</span></a>, <a class="reference internal" href="service_done_event.html#class_service_done_event"><span class="std std-ref">ServiceDoneEvent</span></a></p>
 <div class="breathe-sectiondef docutils container">

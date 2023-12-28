@@ -1,0 +1,19 @@
+<map id="%3" name="%3">
+<area shape="rect" id="node1" title="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ArrivalEvent.hpp" alt="" coords="5,101,762,149"/>
+<area shape="rect" id="node2" title="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/DepartureEvent.hpp" alt="" coords="786,101,1562,149"/>
+<area shape="rect" id="node3" title="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Event.hpp" alt="" coords="2459,5,3164,53"/>
+<area shape="poly" id="edge1" title="include" alt="" coords="2444,44,1675,68,774,104,762,105,762,99,774,99,1675,63,2444,38"/>
+<area shape="poly" id="edge2" title="include" alt="" coords="2444,54,1563,105,1563,99,2443,49"/>
+<area shape="rect" id="node4" title="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ServiceBeginEvent.hpp" alt="" coords="1587,101,2388,149"/>
+<area shape="poly" id="edge3" title="include" alt="" coords="2591,58,2193,103,2193,98,2590,53"/>
+<area shape="rect" id="node5" title="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ServiceDoneEvent.hpp" alt="" coords="2413,101,3210,149"/>
+<area shape="poly" id="edge4" title="include" alt="" coords="2814,69,2814,101,2809,101,2809,69"/>
+<area shape="rect" id="node6" title="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ShopSimulation.hpp" alt="" coords="2875,197,3655,245"/>
+<area shape="poly" id="edge5" title="include" alt="" coords="3084,54,3167,73,3200,85,3224,99,3242,121,3255,147,3266,196,3261,198,3250,149,3238,124,3220,103,3198,90,3166,78,3082,59"/>
+<area shape="rect" id="node7" title="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Simulation.hpp" alt="" coords="3284,101,4027,149"/>
+<area shape="poly" id="edge6" title="include" alt="" coords="3037,53,3445,98,3445,103,3037,58"/>
+<area shape="rect" id="node8" title="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Simulator.hpp" alt="" coords="3688,197,4421,245"/>
+<area shape="poly" id="edge7" title="include" alt="" coords="3179,38,3457,48,3728,62,3940,78,4007,88,4040,99,4055,121,4062,148,4063,174,4061,197,4056,197,4058,174,4057,148,4050,124,4037,103,4006,93,3940,84,3728,67,3456,53,3179,43"/>
+<area shape="poly" id="edge8" title="include" alt="" coords="3544,156,3363,199,3362,194,3543,151"/>
+<area shape="poly" id="edge9" title="include" alt="" coords="3770,151,3955,194,3954,199,3769,156"/>
+</map>
