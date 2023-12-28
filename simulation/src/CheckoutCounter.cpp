@@ -1,6 +1,6 @@
 #include "CheckoutCounter.hpp"
 
-CheckoutCounter::CheckoutCounter() : id(CheckoutCounter::lastId++){};
+CheckoutCounter::CheckoutCounter() : id(CheckoutCounter::lastId++) {}
 
 bool CheckoutCounter::isAvailable() const {
   return this->available;
