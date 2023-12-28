@@ -6,10 +6,10 @@
 
 class Shop {
  private:
-  std::vector<std::shared_ptr<CheckoutCounter> > counters;
+  std::vector<std::shared_ptr<CheckoutCounter>> counters;
 
  public:
   explicit Shop(const int numberOfCounters);
 
-  std::shared_ptr<CheckoutCounter> getAvailableCounter() const;
+  std::shared_ptr<CheckoutCounter> getAvailableCounter();
 };

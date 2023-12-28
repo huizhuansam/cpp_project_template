@@ -3,8 +3,9 @@
 Customer::Customer(const double arrivalTime, const double serviceTime)
     : id(lastId++), arrivalTime(arrivalTime), serviceTime(serviceTime){};
 
-std::shared_ptr<CheckoutCounter> Customer::goToCounter(const Shop& shop) const {
-  return shop.getAvailableCounter();
+std::shared_ptr<CheckoutCounter> Customer::goToCounter(
+    const std::shared_ptr<Shop>& shop) {
+  return shop->getAvailableCounter();
 }
 
 double Customer::getServiceTime() const {

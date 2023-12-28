@@ -15,7 +15,8 @@ class Customer {
  public:
   Customer(const double arrivalTime, const double serviceTime);
 
-  std::shared_ptr<CheckoutCounter> goToCounter(const Shop& shop) const;
+  std::shared_ptr<CheckoutCounter> goToCounter(
+      const std::shared_ptr<Shop>& shop);
 
   double getServiceTime() const;
 
