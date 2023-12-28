@@ -2,6 +2,7 @@
 
 #include <memory>
 #include <vector>
+
 #include "CheckoutCounter.hpp"
 
 class Shop {

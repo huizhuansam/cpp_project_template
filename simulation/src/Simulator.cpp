@@ -1,10 +1,12 @@
 #include "Simulator.hpp"
+
 #include <iostream>
 #include <utility>
 
-Simulator::Simulator(std::priority_queue<std::shared_ptr<Event>,
-                                         std::vector<std::shared_ptr<Event>>,
-                                         MyCompare> events)
+Simulator::Simulator(
+    std::priority_queue<std::shared_ptr<Event>,
+                        std::vector<std::shared_ptr<Event>>, MyCompare>
+        events)
     : events(events){};
 
 Simulator Simulator::factory(const Simulation& simulation) {

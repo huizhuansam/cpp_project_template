@@ -2,6 +2,7 @@
 
 #include <memory>
 #include <queue>
+
 #include "Event.hpp"
 #include "MyCompare.hpp"
 #include "Simulation.hpp"
@@ -13,13 +14,13 @@ class Simulator {
  private:
   /// @brief The event queue.
   std::priority_queue<std::shared_ptr<Event>,
-                      std::vector<std::shared_ptr<Event>>,
-                      MyCompare>
+                      std::vector<std::shared_ptr<Event>>, MyCompare>
       events;
 
-  explicit Simulator(std::priority_queue<std::shared_ptr<Event>,
-                                         std::vector<std::shared_ptr<Event>>,
-                                         MyCompare> events);
+  explicit Simulator(
+      std::priority_queue<std::shared_ptr<Event>,
+                          std::vector<std::shared_ptr<Event>>, MyCompare>
+          events);
 
  public:
   /// @brief The factory method for a simulator.  It takes in a simulation as an
@@ -27,7 +28,7 @@ class Simulator {
   /// initialize the event queue.
   /// @param simulation The simulation to simulate.
   /// @return A Simulator.
-  static Simulator factory(const Simulation& simulation);
+  static Simulator factory(const Simulation &simulation);
 
   /// @brief Run the simulation until no more events is in the queue.  For each
   /// event in the queue (in increasing order of time), print out its string

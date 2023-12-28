@@ -1,4 +1,5 @@
 #include "ServiceBeginEvent.hpp"
+
 #include "DepartureEvent.hpp"
 #include "ServiceDoneEvent.hpp"
 

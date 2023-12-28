@@ -1,5 +1,7 @@
 #include "ShopSimulation.hpp"
+
 #include <iostream>
+
 #include "ArrivalEvent.hpp"
 #include "Customer.hpp"
 

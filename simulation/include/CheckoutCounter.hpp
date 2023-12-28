@@ -17,6 +17,6 @@ class CheckoutCounter {
 
   void makeUnavailable();
 
-  friend std::ostream& operator<<(std::ostream& out,
-                                  const CheckoutCounter& checkoutCounter);
+  friend std::ostream &operator<<(std::ostream &out,
+                                  const CheckoutCounter &checkoutCounter);
 };

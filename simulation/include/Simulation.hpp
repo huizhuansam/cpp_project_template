@@ -2,6 +2,7 @@
 
 #include <memory>
 #include <vector>
+
 #include "Event.hpp"
 
 /// @brief This class is a general abstract class that encapsulates a

@@ -1,4 +1,5 @@
 #include "Shop.hpp"
+
 #include <algorithm>
 
 Shop::Shop(const int numberOfCounters) : counters(numberOfCounters) {

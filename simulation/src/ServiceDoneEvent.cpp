@@ -1,4 +1,5 @@
 #include "ServiceDoneEvent.hpp"
+
 #include "DepartureEvent.hpp"
 
 ServiceDoneEvent::ServiceDoneEvent(const double time,

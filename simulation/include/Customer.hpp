@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <memory>
+
 #include "CheckoutCounter.hpp"
 #include "Shop.hpp"
 
@@ -16,9 +17,9 @@ class Customer {
   Customer(const double arrivalTime, const double serviceTime);
 
   std::shared_ptr<CheckoutCounter> goToCounter(
-      const std::shared_ptr<Shop>& shop);
+      const std::shared_ptr<Shop> &shop);
 
   double getServiceTime() const;
 
-  friend std::ostream& operator<<(std::ostream& out, const Customer& customer);
+  friend std::ostream &operator<<(std::ostream &out, const Customer &customer);
 };

@@ -2,6 +2,7 @@
 
 #include <memory>
 #include <vector>
+
 #include "Event.hpp"
 #include "Shop.hpp"
 #include "Simulation.hpp"

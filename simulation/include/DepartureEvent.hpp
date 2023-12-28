@@ -2,6 +2,7 @@
 
 #include <memory>
 #include <vector>
+
 #include "Customer.hpp"
 #include "Event.hpp"
 
@@ -14,5 +15,5 @@ class DepartureEvent : public Event {
 
   std::vector<std::shared_ptr<Event>> simulate() override;
 
-  std::ostream& print(std::ostream& out) const override;
+  std::ostream &print(std::ostream &out) const override;
 };

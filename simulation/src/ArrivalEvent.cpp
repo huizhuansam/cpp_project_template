@@ -1,4 +1,5 @@
 #include "ArrivalEvent.hpp"
+
 #include "DepartureEvent.hpp"
 #include "ServiceBeginEvent.hpp"
 
@@ -19,6 +20,6 @@ std::vector<std::shared_ptr<Event>> ArrivalEvent::simulate() {
                                           counter)};
 }
 
-std::ostream& ArrivalEvent::print(std::ostream& out) const {
+std::ostream &ArrivalEvent::print(std::ostream &out) const {
   return Event::print(out) << ": " << *(this->customer) << " arrives\n";
 }
