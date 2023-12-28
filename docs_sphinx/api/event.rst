@@ -5,3 +5,4 @@ Event
 
 .. doxygenfile:: Event.hpp
    :project: C++ Project Template
+   :allow-dot-graphs:
