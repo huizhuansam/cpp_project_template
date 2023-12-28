@@ -4,8 +4,8 @@ if (NOT DOXYGEN_FOUND)
   message("Doxygen need to be installed to generate the doxygen documentation")
 else()
   # to be referenced as variables in Doxyfile
-  set(PROJECT_SOURCE_DIR "src")
-  set(PROJECT_INCLUDE_DIR "include")
+  set(PROJECT_SOURCE_DIR "simulation/src")
+  set(PROJECT_INCLUDE_DIR "simulation/include")
 
   # set input and output files
   set(DOXYGEN_IN ${CMAKE_CURRENT_SOURCE_DIR}/docs/Doxyfile)
