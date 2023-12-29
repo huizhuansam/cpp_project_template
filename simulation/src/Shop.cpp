@@ -2,8 +2,10 @@
 
 #include <algorithm>
 
-Shop::Shop(const int numberOfCounters) : counters(numberOfCounters) {
-  for (int i = 0; i < numberOfCounters; ++i) {
+Shop::Shop(const int numberOfCounters)
+    : counters(static_cast<unsigned long>(numberOfCounters)) {
+  for (unsigned long i = 0; i < static_cast<unsigned long>(numberOfCounters);
+       ++i) {
     this->counters[i] = std::make_shared<CheckoutCounter>();
   }
 }

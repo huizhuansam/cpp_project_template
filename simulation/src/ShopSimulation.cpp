@@ -12,11 +12,13 @@ ShopSimulation::ShopSimulation(const std::shared_ptr<Shop> shop,
 ShopSimulation ShopSimulation::factory() {
   int numInitialEvents{};
   std::cin >> numInitialEvents;
-  std::vector<std::shared_ptr<Event>> initEvents(numInitialEvents);
+  std::vector<std::shared_ptr<Event>> initEvents(
+      static_cast<unsigned long>(numInitialEvents));
   int numCounters{};
   std::cin >> numCounters;
   std::shared_ptr<Shop> shop = std::make_shared<Shop>(numCounters);
-  for (int i = 0; i < numInitialEvents; ++i) {
+  for (unsigned long i = 0; i < static_cast<unsigned long>(numInitialEvents);
+       ++i) {
     double arrivalTime{};
     std::cin >> arrivalTime;
     double serviceTime{};
