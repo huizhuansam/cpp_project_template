@@ -15,4 +15,6 @@ class Simulation {
   /// @return A vector of initial events that the simulator can use to
   /// kick-start the simulation.
   virtual std::vector<std::shared_ptr<Event>> getInitialEvents() const = 0;
+
+  virtual ~Simulation() {}
 };
