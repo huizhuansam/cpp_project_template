@@ -3,5 +3,5 @@
 ServiceBeginEvent
 =================
 
-.. doxygenfile:: ServiceBeginEvent.hpp
+.. doxygenclass:: ServiceBeginEvent
    :project: C++ Project Template

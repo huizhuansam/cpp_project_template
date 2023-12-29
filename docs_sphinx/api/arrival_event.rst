@@ -3,5 +3,5 @@
 ArrivalEvent
 ============
 
-.. doxygenfile:: ArrivalEvent.hpp
+.. doxygenclass:: ArrivalEvent
    :project: C++ Project Template

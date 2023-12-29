@@ -3,5 +3,5 @@
 ShopSimulation
 ==============
 
-.. doxygenfile:: ShopSimulation.hpp
+.. doxygenclass:: ShopSimulation
    :project: C++ Project Template

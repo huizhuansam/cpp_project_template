@@ -3,5 +3,5 @@
 Simulator
 =========
 
-.. doxygenfile:: Simulator.hpp
+.. doxygenclass:: Simulator
    :project: C++ Project Template

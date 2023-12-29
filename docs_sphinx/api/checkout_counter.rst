@@ -3,5 +3,5 @@
 CheckoutCounter
 ===============
 
-.. doxygenfile:: CheckoutCounter.hpp
+.. doxygenclass:: CheckoutCounter
    :project: C++ Project Template

@@ -3,6 +3,6 @@
 Event
 =====
 
-.. doxygenfile:: Event.hpp
+.. doxygenclass:: Event
    :project: C++ Project Template
    :allow-dot-graphs:

@@ -3,5 +3,5 @@
 ServiceDoneEvent
 ================
 
-.. doxygenfile:: ServiceDoneEvent.hpp
+.. doxygenclass:: ServiceDoneEvent
    :project: C++ Project Template

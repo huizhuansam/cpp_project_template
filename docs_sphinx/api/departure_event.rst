@@ -3,5 +3,5 @@
 DepartureEvent
 ==============
 
-.. doxygenfile:: DepartureEvent.hpp
+.. doxygenclass:: DepartureEvent
    :project: C++ Project Template

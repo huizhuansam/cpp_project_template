@@ -3,5 +3,5 @@
 Customer
 ========
 
-.. doxygenfile:: Customer.hpp
+.. doxygenclass:: Customer
    :project: C++ Project Template

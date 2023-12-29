@@ -3,5 +3,5 @@
 Shop
 ====
 
-.. doxygenfile:: Shop.hpp
+.. doxygenclass:: Shop
    :project: C++ Project Template
