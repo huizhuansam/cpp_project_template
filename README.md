@@ -26,6 +26,7 @@ To build and work with this C++ project, ensure you have the following software 
 - [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io/en/stable/installing.html)
 - [Breathe](https://breathe.readthedocs.io/en/latest/index.html#download)
 - [Sphinx Sitemap](https://sphinx-sitemap.readthedocs.io/en/latest/getting-started.html#installation)
+- [Graphviz](https://graphviz.org/download/)
 
 ### Build Steps
 
