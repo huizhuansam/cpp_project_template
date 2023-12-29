@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_28_29_0',['operator()',['../class_my_compare.html#a40cbed6b26a07c2a2fa1051f3785dfa2',1,'MyCompare']]]
+  ['operator_28_29_0',['operator()',['../class_simulator_1_1_compare.html#a2dec7b077724a4841e4e5d711e339b74',1,'Simulator::Compare']]]
 ];
