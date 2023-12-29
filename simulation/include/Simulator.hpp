@@ -4,7 +4,7 @@
 #include <queue>
 
 #include "Event.hpp"
-#include "MyCompare.hpp"
+// #include "MyCompare.hpp"
 #include "Simulation.hpp"
 
 /// @brief This class implements a discrete event simulator. The simulator
@@ -12,15 +12,24 @@
 /// each one until the queue is empty.
 class Simulator {
  private:
+  class Compare {
+   public:
+    template <typename T>
+    bool operator()(const std::shared_ptr<T> a,
+                    const std::shared_ptr<T> b) const {
+      return (*a) < (*b);
+    }
+  };
+
   /// @brief The event queue.
   std::priority_queue<std::shared_ptr<Event>,
-                      std::vector<std::shared_ptr<Event>>, MyCompare>
+                      std::vector<std::shared_ptr<Event>>, Simulator::Compare>
       events;
 
-  explicit Simulator(
-      std::priority_queue<std::shared_ptr<Event>,
-                          std::vector<std::shared_ptr<Event>>, MyCompare>
-          events);
+  explicit Simulator(std::priority_queue<std::shared_ptr<Event>,
+                                         std::vector<std::shared_ptr<Event>>,
+                                         Simulator::Compare>
+                         events);
 
  public:
   /// @brief The factory method for a simulator.  It takes in a simulation as an

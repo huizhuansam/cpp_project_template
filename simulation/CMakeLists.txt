@@ -36,6 +36,3 @@ target_link_libraries(main
 target_link_libraries(main
   PRIVATE
   ServiceDoneEvent)
-target_link_libraries(main
-  PRIVATE
-  MyCompare)
