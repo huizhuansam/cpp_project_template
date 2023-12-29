@@ -5,3 +5,4 @@ ServiceDoneEvent
 
 .. doxygenclass:: ServiceDoneEvent
    :project: C++ Project Template
+   :allow-dot-graphs:

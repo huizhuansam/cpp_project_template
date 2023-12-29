@@ -5,3 +5,4 @@ ArrivalEvent
 
 .. doxygenclass:: ArrivalEvent
    :project: C++ Project Template
+   :allow-dot-graphs:

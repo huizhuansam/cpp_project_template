@@ -5,3 +5,4 @@ Shop
 
 .. doxygenclass:: Shop
    :project: C++ Project Template
+   :allow-dot-graphs:

@@ -5,3 +5,4 @@ CheckoutCounter
 
 .. doxygenclass:: CheckoutCounter
    :project: C++ Project Template
+   :allow-dot-graphs:

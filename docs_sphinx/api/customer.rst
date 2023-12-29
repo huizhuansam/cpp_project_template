@@ -5,3 +5,4 @@ Customer
 
 .. doxygenclass:: Customer
    :project: C++ Project Template
+   :allow-dot-graphs:

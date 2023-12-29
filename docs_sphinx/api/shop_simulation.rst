@@ -5,3 +5,4 @@ ShopSimulation
 
 .. doxygenclass:: ShopSimulation
    :project: C++ Project Template
+   :allow-dot-graphs:

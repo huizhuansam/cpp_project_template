@@ -5,3 +5,4 @@ DepartureEvent
 
 .. doxygenclass:: DepartureEvent
    :project: C++ Project Template
+   :allow-dot-graphs:
