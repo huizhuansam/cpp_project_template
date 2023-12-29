@@ -1,7 +1,7 @@
 #include "Customer.hpp"
 
-Customer::Customer(const double arrivalTime, const double serviceTime)
-    : id(lastId++), arrivalTime(arrivalTime), serviceTime(serviceTime){};
+Customer::Customer(const double serviceTime)
+    : id(lastId++), serviceTime(serviceTime){};
 
 std::shared_ptr<CheckoutCounter> Customer::goToCounter(
     const std::shared_ptr<Shop> &shop) {

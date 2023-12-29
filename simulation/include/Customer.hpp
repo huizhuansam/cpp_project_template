@@ -10,11 +10,10 @@ class Customer {
  private:
   static inline int lastId{0};
   const int id{};
-  const double arrivalTime{};
   const double serviceTime{};
 
  public:
-  Customer(const double arrivalTime, const double serviceTime);
+  explicit Customer(const double serviceTime);
 
   std::shared_ptr<CheckoutCounter> goToCounter(
       const std::shared_ptr<Shop> &shop);

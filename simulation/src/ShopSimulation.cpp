@@ -22,7 +22,7 @@ ShopSimulation ShopSimulation::factory() {
     double serviceTime{};
     std::cin >> serviceTime;
     std::shared_ptr<Customer> customer =
-        std::make_shared<Customer>(arrivalTime, serviceTime);
+        std::make_shared<Customer>(serviceTime);
     std::shared_ptr<Event> event =
         std::make_shared<ArrivalEvent>(arrivalTime, customer, shop);
     initEvents[i] = event;
