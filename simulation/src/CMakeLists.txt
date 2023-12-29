@@ -11,6 +11,7 @@ add_library(Simulator Simulator.cpp)
 add_library(DepartureEvent DepartureEvent.cpp)
 add_library(ServiceBeginEvent ServiceBeginEvent.cpp)
 add_library(ServiceDoneEvent ServiceDoneEvent.cpp)
+add_library(Parser Parser.cpp)
 
 # make headers accessible for client
 target_include_directories(Customer
@@ -44,5 +45,8 @@ target_include_directories(ServiceBeginEvent
   PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 target_include_directories(ServiceDoneEvent
+  PUBLIC
+  ${CMAKE_CURRENT_SOURCE_DIR}/../include)
+target_include_directories(Parser
   PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}/../include)
