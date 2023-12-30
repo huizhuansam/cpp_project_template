@@ -1,6 +1,6 @@
 project(${CMAKE_PROJECT_NAME})
 
-add_executable(test main.cpp)
+add_executable(test main.cpp CheckoutCounter.test.cpp)
 
 target_include_directories(test
   PUBLIC
