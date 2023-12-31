@@ -1,0 +1,5 @@
+<map id="%3" name="%3">
+<area shape="rect" id="node1" title="Event" alt="" coords="48,101,120,149"/>
+<area shape="rect" id="node2" title="ServiceDoneEvent" alt="" coords="5,5,162,53"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="86,54,86,86,81,86,81,54"/>
+</map>

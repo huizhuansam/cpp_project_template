@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
 
   
+    <link rel="canonical" href="/api/event.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -22,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="MyCompare" href="my_compare.html" />
+    <link rel="next" title="Parser" href="parser.html" />
     <link rel="prev" title="DepartureEvent" href="departure_event.html" /> 
 </head>
 
@@ -46,7 +47,6 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Welcome to C++ Project Template’s documentation!</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="arrival_event.html">ArrivalEvent</a></li>
 <li class="toctree-l2"><a class="reference internal" href="checkout_counter.html">CheckoutCounter</a></li>
@@ -66,7 +66,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="my_compare.html">MyCompare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parser.html">Parser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="service_begin_event.html">ServiceBeginEvent</a></li>
 <li class="toctree-l2"><a class="reference internal" href="service_done_event.html">ServiceDoneEvent</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shop.html">Shop</a></li>
@@ -104,54 +104,10 @@
              
   <section id="event">
 <span id="api-event"></span><h1>Event<a class="headerlink" href="#event" title="Link to this heading"></a></h1>
-<p>Include dependency graph for Event.hpp:</p>
-<figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../_images/graphviz-f51d9ccdd6873e0f7cd5aea58df9072211c1f288.png" alt="digraph {
-    graph [bgcolor=&quot;#00000000&quot;]
-    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
-    edge [color=&quot;#1414CE&quot;]
-    &quot;1&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Event.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Event.hpp&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;iostream&quot; tooltip=&quot;iostream&quot;]
-    &quot;3&quot; [label=&quot;memory&quot; tooltip=&quot;memory&quot;]
-    &quot;4&quot; [label=&quot;vector&quot; tooltip=&quot;vector&quot;]
-    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;include&quot;]
-    &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;include&quot;]
-    &quot;1&quot; -&gt; &quot;4&quot; [dir=forward tooltip=&quot;include&quot;]
-}" class="graphviz" /></div>
-</div>
-</figure>
-<p>This graph shows which files directly or indirectly include Event.hpp:</p>
-<figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../_images/graphviz-0c0140246d9d0ceedc02541e60252a45e159d4d4.png" alt="digraph {
-    graph [bgcolor=&quot;#00000000&quot;]
-    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
-    edge [color=&quot;#1414CE&quot;]
-    &quot;2&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ArrivalEvent.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ArrivalEvent.hpp&quot;]
-    &quot;3&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/DepartureEvent.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/DepartureEvent.hpp&quot;]
-    &quot;1&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Event.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Event.hpp&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;4&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ServiceBeginEvent.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ServiceBeginEvent.hpp&quot;]
-    &quot;5&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ServiceDoneEvent.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ServiceDoneEvent.hpp&quot;]
-    &quot;6&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ShopSimulation.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/ShopSimulation.hpp&quot;]
-    &quot;7&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Simulation.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Simulation.hpp&quot;]
-    &quot;8&quot; [label=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Simulator.hpp&quot; tooltip=&quot;/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Simulator.hpp&quot;]
-    &quot;1&quot; -&gt; &quot;2&quot; [dir=back tooltip=&quot;include&quot;]
-    &quot;1&quot; -&gt; &quot;3&quot; [dir=back tooltip=&quot;include&quot;]
-    &quot;1&quot; -&gt; &quot;4&quot; [dir=back tooltip=&quot;include&quot;]
-    &quot;1&quot; -&gt; &quot;5&quot; [dir=back tooltip=&quot;include&quot;]
-    &quot;1&quot; -&gt; &quot;6&quot; [dir=back tooltip=&quot;include&quot;]
-    &quot;1&quot; -&gt; &quot;7&quot; [dir=back tooltip=&quot;include&quot;]
-    &quot;1&quot; -&gt; &quot;8&quot; [dir=back tooltip=&quot;include&quot;]
-    &quot;7&quot; -&gt; &quot;6&quot; [dir=back tooltip=&quot;include&quot;]
-    &quot;7&quot; -&gt; &quot;8&quot; [dir=back tooltip=&quot;include&quot;]
-}" class="graphviz" /></div>
-</div>
-</figure>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv45Event">
 <span id="_CPPv35Event"></span><span id="_CPPv25Event"></span><span id="Event"></span><span class="target" id="class_event"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Event</span></span></span><a class="headerlink" href="#_CPPv45Event" title="Link to this definition"></a><br /></dt>
-<dd><div class="docutils container">
-<em>#include &lt;Event.hpp&gt;</em></div>
-<p>Inheritence diagram for Event:</p>
+<dd><p>Inheritence diagram for Event:</p>
 <figure class="align-default">
 <div align="center" class="align-center"><div class="graphviz"><img src="../_images/graphviz-a1a1b560e88a2013b80e5875edfb080ac1fb1dc2.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
@@ -166,6 +122,16 @@
     &quot;3&quot; -&gt; &quot;1&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
     &quot;4&quot; -&gt; &quot;1&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
     &quot;5&quot; -&gt; &quot;1&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Event:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../_images/graphviz-4411cc2a6bd3daf679d5ee2c7777dc45869618f8.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Event&quot; tooltip=&quot;Event&quot; fillcolor=&quot;#BFBFBF&quot;]
 }" class="graphviz" /></div>
 </div>
 </figure>
@@ -248,7 +214,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="departure_event.html" class="btn btn-neutral float-left" title="DepartureEvent" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="my_compare.html" class="btn btn-neutral float-right" title="MyCompare" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="parser.html" class="btn btn-neutral float-right" title="Parser" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

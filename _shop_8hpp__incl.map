@@ -1,0 +1,11 @@
+<map id="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Shop.hpp" name="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Shop.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="32,5,220,76"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,124,74,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,78,63,114,59,110,92,74"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="98,124,155,150"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,76,129,108,124,108,124,76"/>
+<area shape="rect" id="Node000004" href="$_checkout_counter_8hpp.html" title=" " alt="" coords="179,124,327,150"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,74,226,112,223,117,171,79"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="217,198,289,223"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="256,150,256,182,250,182,250,150"/>
+</map>

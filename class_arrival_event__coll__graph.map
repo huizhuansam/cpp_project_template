@@ -1,0 +1,5 @@
+<map id="ArrivalEvent" name="ArrivalEvent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,272,207,545"/>
+<area shape="rect" id="Node000002" href="$class_event.html" title="The Event class is an abstract class that encapsulates a discrete event to be simulated...." alt="" coords="22,5,190,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,239,109,272,103,272,103,239"/>
+</map>

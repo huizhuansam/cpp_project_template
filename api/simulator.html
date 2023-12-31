@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
 
   
+    <link rel="canonical" href="/api/simulator.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -45,14 +46,13 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Welcome to C++ Project Template’s documentation!</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="arrival_event.html">ArrivalEvent</a></li>
 <li class="toctree-l2"><a class="reference internal" href="checkout_counter.html">CheckoutCounter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="customer.html">Customer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="departure_event.html">DepartureEvent</a></li>
 <li class="toctree-l2"><a class="reference internal" href="event.html">Event</a></li>
-<li class="toctree-l2"><a class="reference internal" href="my_compare.html">MyCompare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parser.html">Parser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="service_begin_event.html">ServiceBeginEvent</a></li>
 <li class="toctree-l2"><a class="reference internal" href="service_done_event.html">ServiceDoneEvent</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shop.html">Shop</a></li>
@@ -103,8 +103,16 @@
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv49Simulator">
 <span id="_CPPv39Simulator"></span><span id="_CPPv29Simulator"></span><span id="Simulator"></span><span class="target" id="class_simulator"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Simulator</span></span></span><a class="headerlink" href="#_CPPv49Simulator" title="Link to this definition"></a><br /></dt>
-<dd><div class="docutils container">
-<em>#include &lt;Simulator.hpp&gt;</em></div>
+<dd><p>Collaboration diagram for Simulator:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../_images/graphviz-1e4791b66f7fef83da87ecdcebe45201b9aaedff.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Simulator&quot; tooltip=&quot;Simulator&quot; fillcolor=&quot;#BFBFBF&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
 <p>This class implements a discrete event simulator. The simulator maintains a priority queue of events, and run through the events, simulate each one until the queue is empty. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
@@ -152,7 +160,17 @@
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N9Simulator7CompareE">
 <span id="_CPPv3N9Simulator7CompareE"></span><span id="_CPPv2N9Simulator7CompareE"></span><span id="Simulator::Compare"></span><span class="target" id="class_simulator_1_1_compare"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Compare</span></span></span><a class="headerlink" href="#_CPPv4N9Simulator7CompareE" title="Link to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
+<dd><p>Collaboration diagram for Simulator::Compare:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../_images/graphviz-0a1fb953d796b72665f17e299c529c6e70be611c.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Simulator::Compare&quot; tooltip=&quot;Simulator::Compare&quot; fillcolor=&quot;#BFBFBF&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4I0ENK9Simulator7CompareclEbKNSt10shared_ptrI1TEEKNSt10shared_ptrI1TEE">

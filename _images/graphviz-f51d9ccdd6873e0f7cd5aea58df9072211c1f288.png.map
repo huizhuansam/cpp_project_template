@@ -1,9 +1,0 @@
-<map id="%3" name="%3">
-<area shape="rect" id="node1" title="/Users/runner/work/cpp_project_template/cpp_project_template/simulation/include/Event.hpp" alt="" coords="5,5,710,53"/>
-<area shape="rect" id="node2" title="iostream" alt="" coords="207,101,292,149"/>
-<area shape="poly" id="edge1" title="include" alt="" coords="333,56,289,93,286,89,329,52"/>
-<area shape="rect" id="node3" title="memory" alt="" coords="316,101,399,149"/>
-<area shape="poly" id="edge2" title="include" alt="" coords="360,54,360,86,355,86,355,54"/>
-<area shape="rect" id="node4" title="vector" alt="" coords="423,101,495,149"/>
-<area shape="poly" id="edge3" title="include" alt="" coords="384,52,424,89,421,93,381,56"/>
-</map>

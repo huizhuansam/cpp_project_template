@@ -1,0 +1,5 @@
+<map id="Simulation" name="Simulation">
+<area shape="rect" id="Node000001" title="This class is a general abstract class that encapsulates a simulation. To implement a simulation,..." alt="" coords="35,5,203,136"/>
+<area shape="rect" id="Node000002" href="$class_shop_simulation.html" title="This class implements a shop simulation." alt="" coords="5,184,233,428"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,151,122,184,117,184,117,151"/>
+</map>
