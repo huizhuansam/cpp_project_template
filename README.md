@@ -41,6 +41,12 @@ After completing the above steps, you'll find the executable at `[project root]/
 - Combine steps 4 and 5 using the `&&` operator: `cmake .. && make`.
 - Speed up compilation with `make -j4`.
 
+### Running Tests
+
+The tests cases are built alongside the project by default.
+
+From the `build` directory, run `./simulation/tests/test -s`.
+
 ### Generating Documentation
 
 The project's documentation website is hosted on [GitHub Pages](https://huizhuansam.github.io/cpp_project_template/). The website updates automatically when commits are pushed onto the `master` branch via GitHub Actions. To generate a local preview of the documentation:
