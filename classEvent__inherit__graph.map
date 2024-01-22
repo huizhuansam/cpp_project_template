@@ -1,0 +1,7 @@
+<map id="Event" name="Event">
+<area shape="rect" id="node1" title="The Event class is an abstract class that encapsulates a discrete event to be simulated...." alt="" coords="371,5,570,215"/>
+<area shape="rect" id="node2" href="$classArrivalEvent.html" title=" " alt="" coords="5,263,227,531"/>
+<area shape="rect" id="node3" href="$classDepartureEvent.html" title=" " alt="" coords="251,285,445,509"/>
+<area shape="rect" id="node4" href="$classServiceBeginEvent.html" title=" " alt="" coords="469,263,718,531"/>
+<area shape="rect" id="node5" href="$classServiceDoneEvent.html" title=" " alt="" coords="743,263,964,531"/>
+</map>

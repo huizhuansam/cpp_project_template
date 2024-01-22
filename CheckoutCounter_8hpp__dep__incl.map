@@ -1,0 +1,10 @@
+<map id="/home/runner/work/cpp_project_template/cpp_project_template/simulation/include/CheckoutCounter.hpp" name="/home/runner/work/cpp_project_template/cpp_project_template/simulation/include/CheckoutCounter.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="494,5,709,76"/>
+<area shape="rect" id="node2" href="$Customer_8hpp.html" title=" " alt="" coords="387,243,600,313"/>
+<area shape="rect" id="node5" href="$ServiceBeginEvent_8hpp.html" title=" " alt="" coords="480,361,707,432"/>
+<area shape="rect" id="node6" href="$ServiceDoneEvent_8hpp.html" title=" " alt="" coords="731,361,955,432"/>
+<area shape="rect" id="node7" href="$Shop_8hpp.html" title=" " alt="" coords="232,124,445,195"/>
+<area shape="rect" id="node3" href="$ArrivalEvent_8hpp.html" title=" " alt="" coords="5,361,219,432"/>
+<area shape="rect" id="node4" href="$DepartureEvent_8hpp.html" title=" " alt="" coords="243,361,456,432"/>
+<area shape="rect" id="node8" href="$ShopSimulation_8hpp.html" title=" " alt="" coords="149,243,363,313"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="/home/runner/work/cpp_project_template/cpp_project_template/simulation/include/Customer.hpp" name="/home/runner/work/cpp_project_template/cpp_project_template/simulation/include/Customer.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="364,5,577,76"/>
+<area shape="rect" id="node2" href="$ArrivalEvent_8hpp.html" title=" " alt="" coords="5,124,219,195"/>
+<area shape="rect" id="node3" href="$DepartureEvent_8hpp.html" title=" " alt="" coords="243,124,456,195"/>
+<area shape="rect" id="node4" href="$ServiceBeginEvent_8hpp.html" title=" " alt="" coords="480,124,707,195"/>
+<area shape="rect" id="node5" href="$ServiceDoneEvent_8hpp.html" title=" " alt="" coords="731,124,955,195"/>
+</map>

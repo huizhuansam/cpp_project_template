@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['departureevent_0',['DepartureEvent',['../class_departure_event.html',1,'']]]
+  ['departureevent_59',['DepartureEvent',['../classDepartureEvent.html',1,'']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['checkoutcounter_0',['CheckoutCounter',['../class_checkout_counter.html',1,'']]],
-  ['compare_1',['Compare',['../class_simulator_1_1_compare.html',1,'Simulator']]],
-  ['customer_2',['Customer',['../class_customer.html',1,'']]]
+  ['checkoutcounter_56',['CheckoutCounter',['../classCheckoutCounter.html',1,'']]],
+  ['compare_57',['Compare',['../classSimulator_1_1Compare.html',1,'Simulator']]],
+  ['customer_58',['Customer',['../classCustomer.html',1,'']]]
 ];

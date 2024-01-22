@@ -1,5 +1,0 @@
-<map id="ServiceDoneEvent" name="ServiceDoneEvent">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,272,205,545"/>
-<area shape="rect" id="Node000002" href="$class_event.html" title="The Event class is an abstract class that encapsulates a discrete event to be simulated...." alt="" coords="21,5,189,224"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,239,108,272,103,272,103,239"/>
-</map>
