@@ -22,10 +22,6 @@ To build and work with this C++ project, ensure you have the following software 
 #### Documentation
 
 - [Doxygen](https://www.doxygen.nl/download.html)
-- [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html)
-- [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io/en/stable/installing.html)
-- [Breathe](https://breathe.readthedocs.io/en/latest/index.html#download)
-- [Sphinx Sitemap](https://sphinx-sitemap.readthedocs.io/en/latest/getting-started.html#installation)
 - [Graphviz](https://graphviz.org/download/)
 
 ### Build Steps
@@ -49,9 +45,9 @@ After completing the above steps, you'll find the executable at `[project root]/
 
 The project's documentation website is hosted on [GitHub Pages](https://huizhuansam.github.io/cpp_project_template/). The website updates automatically when commits are pushed onto the `master` branch via GitHub Actions. To generate a local preview of the documentation:
 
-1. Navigate to the project's documentation directory: `cd docs_sphinx`
-2. Run `make html` to create a `_build` subdirectory.
-3. Open the generated HTML documentation: `[project root]/docs_sphinx/_build/html/index.html` using your preferred browser.
+1. Navigate to the project's documentation directory: `cd docs`
+2. Run `doxygen Doxyfile.in` to create a `_build` subdirectory.
+3. Open the generated HTML documentation: `[project root]/docs/_build/html/index.html` using your preferred browser.
 
 ## Acknowledgements
 
