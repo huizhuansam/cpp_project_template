@@ -1,0 +1,28 @@
+name: Enforce Code Style
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  check-code-format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup clang-format
+      run: sudo apt-get install clang-format
+
+    - name: Check Code Format
+      run: | # Check code format using clang-format
+        CLANG_FORMAT_RESULT=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'simulation/*.cpp' 'simulation/*.h' | xargs clang-format -style=file -output-replacements-xml)
+
+        if [ -n "$CLANG_FORMAT_RESULT" ]; then
+          echo "Code does not adhere to coding standards. Please run clang-format on your changes."
+          echo "Changes made by clang-format:"
+          echo "$CLANG_FORMAT_RESULT"
+          exit 1
+        fi
