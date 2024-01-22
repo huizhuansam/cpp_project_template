@@ -9,8 +9,7 @@ ArrivalEvent::ArrivalEvent(const double time,
     : Event(time), customer(customer), shop(shop){};
 
 std::vector<std::shared_ptr<Event>> ArrivalEvent::simulate() {
-  std::shared_ptr<CheckoutCounter> counter =
-      this->customer->goToCounter(this->shop);
+  std::shared_ptr<CheckoutCounter> counter = this->customer->goToCounter(this->shop);
   if (!counter) {
     return std::vector<std::shared_ptr<Event>>{
         std::make_shared<DepartureEvent>(this->getTime(), this->customer)};
