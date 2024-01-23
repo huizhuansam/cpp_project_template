@@ -25,6 +25,6 @@ jobs:
 
       - name: Generate Test Coverage Report
         run: |
-          xcrun llvm-profdata merge -sparse default.profraw -o default.profdata
-          xcrun llvm-cov report ./simulation/tests/test -instr-profile=default.profdata
+          xcrun llvm-profdata merge -sparse ./build/default.profraw -o ./build/default.profdata
+          xcrun llvm-cov report ./build/simulation/tests/test -instr-profile=./build/default.profdata
 
