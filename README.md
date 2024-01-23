@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/github/huizhuansam/cpp_project_template/graph/badge.svg?token=98JDIDCD7A)](https://codecov.io/github/huizhuansam/cpp_project_template)
+
 # C++ Project Template
 
 ## Getting Started
