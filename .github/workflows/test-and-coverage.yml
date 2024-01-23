@@ -26,7 +26,7 @@ jobs:
       - name: Generate Test Coverage Report
         run: |
           xcrun llvm-profdata merge -sparse ./build/default.profraw -o ./build/default.profdata
-          xcrun llvm-cov show ./build/simulation/tests/test -instr-profile=./build/default.profdata > ./coverage.txt
+          xcrun llvm-cov report ./build/simulation/tests/test -instr-profile=./build/default.profdata > ./coverage.txt
 
       - name: Upload Test Coverage Report
         uses: codecov/codecov-action@v3
