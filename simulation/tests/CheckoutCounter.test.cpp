@@ -5,7 +5,7 @@
 TEST_CASE("CheckoutCounter unit tests") {
   CheckoutCounter cc{};
   SECTION("CheckoutCounter is available when constructed") {
-    REQUIRE((cc.isAvailable() == false));
+    REQUIRE((cc.isAvailable() == true));
   }
   SECTION("CheckoutCounter can be made unavailable") {
     cc.makeUnavailable();
