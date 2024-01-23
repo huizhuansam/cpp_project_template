@@ -18,8 +18,13 @@ jobs:
           mkdir build
           cd build
           cmake -DCMAKE_BUILD_TYPE=Debug .. && make test -j4
-          ./simulation/tests/test -s
+          LLVM_PROFILE_FILE="default.profraw" ./simulation/tests/test -s
           if [ $? -ne 0 ]; then
             exit 1
           fi
+
+      - name: Generate Test Coverage Report
+        run: |
+          xcrun llvm-profdata merge -sparse default.profraw -o default.profdata
+          xcrun llvm-cov report ./simulation/tests/test -instr-profile=default.profdata
 
