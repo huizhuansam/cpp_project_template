@@ -17,7 +17,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake -DCMAKE_BUILD_TYPE=Debug .. && make -j4
+          cmake -DCMAKE_BUILD_TYPE=Debug .. && make test -j4
           ./simulation/tests/test -s
           if [ $? -ne 0 ]; then
             exit 1
